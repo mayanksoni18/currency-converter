@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter - convert your currencies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">currency-converter</div>
+<ul>
+    <li><a href = "/">Home</a></li>
+    <li><a href = "/About">About</a></li>
+    <li><a href = "/Contact us">Contact us</a></li>
+</ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get"> 
+            <label for="quantity">choose a quantity : </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency-converter">choose a currency : </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US dollar</option>
+                <option value="EUR">EURO</option>
+            </select>
+            <button class="btn" type="submit">submit</button>
+        </form>
+        <div class="output">
+            <h2>here is your converted currency value in different values</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+Copyright &copy; All rights reserve
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
